@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invitation de Mariage</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Écran de l'enveloppe -->
+  <div id="envelope-screen" class="screen">
+    <div class="envelope" id="envelope">
+      <div class="wax-seal" onclick="openEnvelope()">
+        <span>D&J</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contenu de l'invitation -->
+  <div id="invitation-content" class="content hidden">
+    
+    <!-- Section 1 : En-tête -->
+    <section class="card header-card">
+      <p class="bismillah">Basmala / Calligraphie</p>
+      <h1 class="names">David & Annie</h1>
+      <p class="subtext">Ont la joie de vous inviter à célébrer leur union</p>
+      <div class="date-box">
+        <p>Le Vendredi</p>
+        <h2>14 AOÛT 2026</h2>
+        <p>à 19h</p>
+      </div>
+    </section>
+
+    <!-- Section 2 : Message -->
+    <section class="card message-card">
+      <p>Dans la joie et la gratitude,</p>
+      <p>nous avons l'honneur de vous convier à la célébration de notre mariage.</p>
+    </section>
+
+    <!-- Section 3 : Le Lieu -->
+    <section class="card location-card">
+      <h2>Le Lieu</h2>
+      <p class="venue-name">Salle des Fêtes</p>
+      <p class="address">Ville, Pays</p>
+      
+      <!-- Carte intégrée Google Maps -->
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3200!2d0.0!3d0.0!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMDPCsDAwJzAwLjAiTiAwwrAwMCcwMC4wIkU!5e0!3m2!1sfr!2s!4v1" 
+          width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+      </div>
+      <a href="https://maps.google.com" target="_blank" class="btn">Ouvrir l'itinéraire</a>
+    </section>
+
+    <!-- Section 4 : Compte à Rebours -->
+    <section class="card countdown-card">
+      <h2>Compte à rebours</h2>
+      <div id="timer">
+        <div><span id="days">00</span><br>Jours</div>
+        <div><span id="hours">00</span><br>Heures</div>
+        <div><span id="minutes">00</span><br>Minutes</div>
+        <div><span id="seconds">00</span><br>Secondes</div>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

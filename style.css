@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #4a0e17; /* Rouge bordeaux */
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+}
+
+.screen, .content {
+  width: 100%;
+  max-width: 430px; /* Format écran smartphone */
+  min-height: 100vh;
+}
+
+/* Enveloppe & Sceau */
+#envelope-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5c121e;
+}
+
+.wax-seal {
+  width: 90px;
+  height: 90px;
+  background: radial-gradient(circle, #e6c594, #bc9355);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  border: 3px solid #dfb16c;
+}
+
+.wax-seal span {
+  font-family: 'Great Vibes', cursive;
+  font-size: 28px;
+  color: #4a0e17;
+  font-weight: bold;
+}
+
+/* Affichage du contenu */
+.hidden {
+  display: none;
+}
+
+.card {
+  background-color: #ffffff;
+  color: #333333;
+  margin: 20px 15px;
+  padding: 25px 20px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.names {
+  font-family: 'Great Vibes', cursive;
+  font-size: 42px;
+  color: #8b1e2d;
+  margin: 15px 0;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #8b1e2d;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* Compte à rebours */
+#timer {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+
+#timer div {
+  font-size: 12px;
+}
+
+#timer span {
+  font-size: 22px;
+  font-weight: bold;
+  color: #8b1e2d;
+}
